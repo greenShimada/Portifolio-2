@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #fcfbff;
+    display: flex;
+    justify-content: center;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 6px;
+  }
+  body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: lightgray; 
+  }
+  
+  main {
+    width: 1120px;
+  }
+  
+  /* HEADER */
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 20px;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: #fcfbff;
+    box-shadow: 0 1px 0 #ececec;
+    max-width: 1120px;
+    width: 100%;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  
+.home-img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-img img{
+    height: 200px;
+    width: 200px;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 10px 10px;
+    border-radius: 50%;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+.home-info{
+    width: 50%;
+    display: flex;
+    flex-direction:  column;
+    gap: 15px;
+    text-align: justify;
+  }
+  section#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    width: 100%;
+  }
+
+  /*BODY*/
+
+  /*WHO IS HE*/
+  section#eu{
+    background-color: black;
+    color: white;
+    max-width: 1120px;;
+    box-shadow: rgb(39, 39, 39) 0 10px 10px;
+    height: calc(100vh + 80px);
+  }
+
+  .wih-text h2{
+    padding: 50px;
+    text-align: center;
+  }
+
+  #wih-resume{
+    max-width: 700px; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+    
+  }
+  .limite{
+    max-width: 900px;
+    align-items: center;
+    text-align: center;
+    left: calc( (1120px/2 - 900px/2)  ) ;
+
+  }
+
+  .wih-image{
+    width: 30%;
+    height: 30%;
+    display: flex;
+    margin-top: 50px;
+    left: calc(50% - 360px/2) ;
+    box-shadow: 0 2px 5px   white;
+  }
+
+    /*AED II*/
+
+    section#aed2{
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      max-width: 1120px;;
+      box-shadow: rgb(39, 39, 39) 0 10px 10px;
+      height: calc(50vh + 40px);
+    }
+
+    #AEDII{
+      margin-top: 5px;
+      box-shadow: 1 20px -40px;
+    }
+  .aedii-text{
+      padding: 50px;
+      text-align: center;
+      margin-left: 350px;
+  }
+
+  .grafo{
+    height: 300px;
+    width: 300px;
+    scale: 80%;
+    margin-top: calc(25% - 150px);
+    box-shadow: 0 5px 5px;
+    border-radius: 50%;
+    float: left;
+  }
+
+  .resumo-materia{
+    
+  }
+
+  #comentario-materia{
+    margin-top: 30px;
+    display: flex;
+    font-size: 20px;
+  }
+
+  /*AOC*/
+  
+  #AOC{
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    max-width: 1120px;;
+    box-shadow: rgb(39, 39, 39) 0 10px 10px;
+    height: calc(50vh + 40px);
+   
+  }
+  .aoc{
+    height: 300px;
+    width: 300px;
+    scale: 80%;
+    margin-top: calc(25% - 150px);
+    box-shadow: 0 5px 5px;
+    border-radius: 50%;
+    float: right;
+    
+  }
+
+  .aoc-titulo{
+    padding: 50px;
+    text-align: center;
+    margin-right: 350px;
+    
+  }
+
+  .aoc-text{
+    padding: 50px;
+    text-align: center;
+    margin-right: 350px;
+  }
+
+  #LABAEDII{
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    max-width: 1120px;;
+    box-shadow: rgb(39, 39, 39) 0 10px 10px;
+    height: calc(50vh + 70px);
+  }
+
+  section#lab{
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    max-width: 1120px;;
+    box-shadow: rgb(39, 39, 39) 0 10px 10px;
+    height: calc(50vh + 70px);
+  }
+  section#mentoring{
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    max-width: 1120px;;
+    box-shadow: rgb(39, 39, 39) 0 10px 10px;
+    height: calc(50vh + 40px);
+
+  }
